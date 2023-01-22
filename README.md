@@ -30,3 +30,4 @@ Going forward, whenever I complete a task I will **Add-Commit-Push (ACP)**
 - git add .
 - git commit -m "describe my work"
 - git push origin main :rocket:
+![codegym](https://www.enterprisetimes.co.uk/wp-content/uploads/2044/09/Codegym_logo_600x600.png)
