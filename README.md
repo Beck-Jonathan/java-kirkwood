@@ -17,7 +17,7 @@ the `System.out.println()` statement.
 ```java
 public class MyClass {
 public static void main(String[] args) {
-System.out.println("My name is Marc!");
+System.out.println("My name is Jonathan!");
 }
 }
 ```
