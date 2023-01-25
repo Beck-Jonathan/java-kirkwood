@@ -47,6 +47,52 @@ public class DayOne {
         // of the function. %d can be used for digit
         System.out.printf("My name is %s %s and I am %d years old. I have " +
                 "$%.2f  in my checking account \n" ,firstName,lastName,age,acctBalance);
+        //floating point test
+        //this bit has some nonsese with rounding errors
+        System.out.println(2-1.1);
+        //This bit formats the result to one decimal place
+        System.out.printf("%.1f\n", 2 - 1.1);
+        //reassign variables. Set data type first time assigneing variable
+        String bunnyName = "Cocoa";
+        System.out.println(bunnyName);
+        // You do not need to set data type second time assignging variable,
+        //In fact, you can not change the variable type.
+        bunnyName="Gus";
+        System.out.println(bunnyName);
+        //concat ane string and nonsesne, use parenthesis to avoid concatination
+        int G=56;
+        int H=4;
+        System.out.println("the answer is" +G+H);
+        System.out.println("The answer is" +(G+H));
+        //after break, example 4?
+        //initilzie  multiple at once examples
+        int length,width;
+        length=3;
+        width=4;
+        //initialize raidus, initialize and assign height, weird.
+        int radius, height=2;
+        //various ways to increment
+        System.out.println(length);
+        //dpn't say "length equals blah blah
+        //rather say "assign the value blah blah
+        length=length+=1;
+        System.out.println(length);
+        length++;
+        System.out.println(length);
+        ++length;
+        System.out.println(length);
+
+        //math interesting
+        int q=15;
+        int w=q / 6;
+        double e=q / 6.0;
+        int r =q*3;
+        System.out.println(q);
+        System.out.println(w);
+        System.out.println(e);
+        System.out.println(r);
+        System.out.println('q'+'w'+'e'+'r');
+
 
     }
 }
