@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/java-kirkwood.iml" filepath="$PROJECT_DIR$/java-kirkwood.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeGymTasks.iml" filepath="$PROJECT_DIR$/CodeGymTasks.iml" />
     </modules>
   </component>
 </project>
