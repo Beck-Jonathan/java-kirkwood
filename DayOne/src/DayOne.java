@@ -1,5 +1,8 @@
 import org.w3c.dom.ls.LSOutput;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 /*
    This is a simple Java program.
  */
@@ -92,7 +95,33 @@ public class DayOne {
         System.out.println(e);
         System.out.println(r);
         System.out.println('q'+'w'+'e'+'r');
+//exmple 1-1 updated, linking into example 4 gettnig user input
+        double gallons =4;
+        double liters = gallons * 3.7854;
+        System.out.printf("%s gallons is the same as %s liters\n",gallons,liters);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your new value for gallons? ");
+        String newGallons = scanner.nextLine();
+        //System.out.printf("%d gallons is the same as %d liters\n",newGallons,newGallons*3.7854);
+        System.out.println("How mayn dogs do you have");
+        int dogCollection = scanner.nextInt();
+        System.out.println(dogCollection + " dogs will have " + 4*dogCollection + " legs");
+        while (true)
+        {
+            System.out.println("enter your age: ");
+            int usersage;
+            try {
+                //get int, if you did a string or double you willget a crash
+                //consider next string or next double
+                usersage = scanner.nextInt();
+            }
+            catch(InputMismatchException exception) {
+                continue;
+            }
+            finally {break;}
+
+            }
+            }
+        }
 
 
-    }
-}
