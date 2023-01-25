@@ -2,7 +2,7 @@
 ## Idea
 #############
 target/
-.idea/
+#.idea/
 .idea
 .repository/
 *.iml
