@@ -3,9 +3,9 @@
 #############
 target/
 #.idea/
-.idea
+#.idea
 .repository/
-*.iml
+#*.iml
 *.iws
 *.tcs
 #*.java
