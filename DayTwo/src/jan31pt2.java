@@ -48,6 +48,19 @@ public class jan31pt2 {
         double areaOfCyl = areaOfCircle * heightofCyl;
         System.out.printf("A cylinder with a radius of %.1f" +
                 "and a height of %.1f has an area of %.2f\n", radius, heightofCyl, areaOfCyl);
+  //a whole lecture on objects happened
+        for (int i = 0; i <5;i++) {
+            System.out.println(i);
+        }
+        //i no longer exists after the for loop, i is "scooped"
+       // System.out.println(i);
+        int i;
+        for( i=0;i<5;i++) {
+            System.out.println(i);
+        }
+        System.out.println(i);
+        //in this above loop i is scoped to the main method, allowing us access outside of the loop
 
+        }
     }
 }

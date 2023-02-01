@@ -56,6 +56,8 @@ public class DayTwo {
 
             //string method 3) to upper case
             System.out.println(name.toUpperCase());
+            //a whole leacure on object oriented stuff
+
 
         }
     }
