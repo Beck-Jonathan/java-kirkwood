@@ -27,5 +27,27 @@ public class jan31pt2 {
         ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(8, 1, 9, 2, 7));
         int max2 = Collections.max(numbers);
         System.out.println(max2);
+        //char data type requires single quotes '', it can only contain a single character
+        String myName = "Jonathan";
+        char firstCharacter = myName.charAt(0);
+        char lastCharacter = myName.charAt(myName.length() - 1);
+        char secondCharacter = myName.charAt(1);
+        System.out.println("my chars are" + firstCharacter + secondCharacter + lastCharacter);
+        //Boolean, don't capitalize true or false
+        boolean handsom = true;
+        boolean ugly = false;
+        //slashes quotes to make quotes look right
+        System.out.println("first line \nsecond line");
+        System.out.println("The mascot is \"Eddie The eagle\"");
+        //calculate are of circle
+        double radius = 2.5;
+        double areaOfCircle = Math.PI * radius * radius;
+        double areaOtherVersion = Math.PI * Math.pow(radius, 2);
+        System.out.println(areaOfCircle);
+        double heightofCyl = 6;
+        double areaOfCyl = areaOfCircle * heightofCyl;
+        System.out.printf("A cylinder with a radius of %.1f" +
+                "and a height of %.1f has an area of %.2f\n", radius, heightofCyl, areaOfCyl);
+
     }
 }
