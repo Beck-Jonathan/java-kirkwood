@@ -35,17 +35,19 @@ Going forward, whenever I complete a task I will **Add-Commit-Push (ACP)**
 Overall I am having a growing comfort stepping out of my Phthon 
 shell and not letting syntax differences concern me.
 
-A large skill being developed is reading document tation and applying it. the JetBrains IDE
+A large skill being developed is reading documenttation and applying it.
+the [JetBrains IDE](https://www.jetbrains.com/idea/download/) 
 has fantastic integrated tooltips to explain your errors quickly.
 
 Learng about the object-oriented core tenents of
-* Encapsulation,
-* Inheritance, 
-* Polymorphism
-* Abstraction 
+* **Encapsulation**
+* **Inheritance**
+* **Polymorphism**
+* **Abstraction** 
 
 is a new wrinkle  but with practice becomes clear.
 
 Working with a classmate as a driver/navigator pair is a solid way to 
 help us learn how to work together in this circumstance. I look forward
-to future partner projects. 
+to future partner projects. Communicating `System.out.println()` has never 
+been so challenging and rewarding.
