@@ -20,5 +20,11 @@ public class Main {
         System.out.println(rect2.getNumSides());
         System.out.println(rect2.getArea());
         System.out.println(circle2.getArea());
+
+        Cylinder cylinder1 = new Cylinder(); //height is 1, radius is 1
+        Cylinder cylinder2 = new Cylinder(4,circle2); //height is 4, radius is 3
+        System.out.printf("%.1f\n",cylinder1.getArea()); // 12.6
+        System.out.printf("%.1f\n",cylinder2.getVolume()); // 113.1
+
     }
 }

@@ -5,8 +5,8 @@ public class Rectangle extends Shape{
     private double height;
     public Rectangle() {
         super(4);
-        base = 0;
-        height = 0;
+        base = 1;
+        height = 1;
     }
     public Rectangle(double base, double height) {
         super(4);
@@ -19,7 +19,7 @@ public class Rectangle extends Shape{
     }
 
     public void setBase(double base) {
-        if(base < 0) {
+        if(base <= 0) {
             throw new IllegalArgumentException("Invalid base");
         }
         this.base = base;
@@ -30,7 +30,7 @@ public class Rectangle extends Shape{
     }
 
     public void setHeight(double height) {
-        if(height < 0) {
+        if(height <= 0) {
             throw new IllegalArgumentException("Invalid height");
         }
         this.height = height;

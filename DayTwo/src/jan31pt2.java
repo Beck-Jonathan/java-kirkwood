@@ -45,9 +45,9 @@ public class jan31pt2 {
         double areaOtherVersion = Math.PI * Math.pow(radius, 2);
         System.out.println(areaOfCircle);
         double heightofCyl = 6;
-        double areaOfCyl = areaOfCircle * heightofCyl;
+        double volOfCyl = areaOfCircle * heightofCyl;
         System.out.printf("A cylinder with a radius of %.1f" +
-                "and a height of %.1f has an area of %.2f\n", radius, heightofCyl, areaOfCyl);
+                "and a height of %.1f has an area of %.2f\n", radius, heightofCyl, volOfCyl);
   //a whole lecture on objects happened
         for (int i = 0; i <5;i++) {
             System.out.println(i);
@@ -60,6 +60,6 @@ public class jan31pt2 {
         }
         System.out.println(i);
         //in this above loop i is scoped to the main method, allowing us access outside of the loop
-
+        System.out.println("one \ntwo \nthree");
         }
     }
