@@ -65,6 +65,23 @@ public class Feb_6 {
         for (int i =1;i<=10; i++){
             System.out.printf("%d /3 = %.3f\n",i,(double) i / 3);
         }
+
+        //example of removing deicmals frmo whole number reults
+        Scanner demo = new Scanner(System.in);
+        System.out.println("enter a number");
+        double testA= demo.nextDouble();
+        System.out.println("enter a number");
+        double testB = demo.nextDouble();
+        System.out.println("the division result is");
+        double testC=testA/testB;
+        int testD = (int)testC;
+        if (testC-testD<.00001){
+            System.out.println(testD);
+        } else {
+            System.out.println(testC);
+        }
+
+
     }
 }
 
