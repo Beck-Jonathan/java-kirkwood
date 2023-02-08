@@ -3,6 +3,21 @@ import java.util.Scanner;
 
 public class Feb_6 {
     public static void main(String[] args) {
+        String favTeam = "Eagles";
+        String leastFavTeam = new String("Eagles");
+        //do not do this, this checks memory addrsss
+        System.out.println(favTeam==leastFavTeam);
+        //you want to use the .Equals method
+        System.out.println(favTeam.equals(leastFavTeam));
+        favTeam= "eagles";
+        System.out.println(favTeam.equals(leastFavTeam));//false
+        System.out.println(favTeam.equalsIgnoreCase(leastFavTeam));//true
+
+        //ternary operator
+        int Wham=5;
+        int Bam = 7;
+        System.out.println(Wham>Bam ? Wham : Bam);
+
         for (int i = 0; i <= 10; i++) {
             System.out.print(i);
             if (i % 2 == 0) {
@@ -80,8 +95,6 @@ public class Feb_6 {
         } else {
             System.out.println(testC);
         }
-
-
     }
 }
 
