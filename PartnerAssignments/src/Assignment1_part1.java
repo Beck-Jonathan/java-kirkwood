@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//Jonathan was the Driver, Keaton was the navigator
 public class Assignment1_part1 {
 public static void main(String[]args){
     Scanner getter = new Scanner(System.in);
