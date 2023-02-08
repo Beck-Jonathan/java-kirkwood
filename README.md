@@ -4,7 +4,7 @@ This is the work I completed for my CIS-171 Java course at Kirkwood Community
 College. Below is a journal of all the things I learned throughout 
 the class.
 
-## Introduction
+## Weeks 1 and 2
 
 In the Introduction unit we created accounts and installed software 
 needed for the class.
@@ -30,3 +30,22 @@ Going forward, whenever I complete a task I will **Add-Commit-Push (ACP)**
     - git add .
     - git commit -m "describe my work"
     - git push origin main :rocket:
+
+## Weeks 3 and 4
+Overall I am having a growing comfort stepping out of my Phthon 
+shell and not letting syntax differences concern me.
+
+A large skill being developed is reading document tation and applying it. the JetBrains IDE
+has fantastic integrated tooltips to explain your errors quickly.
+
+Learng about the object-oriented core tenents of
+* Encapsulation,
+* Inheritance, 
+* Polymorphism
+* Abstraction 
+
+is a new wrinkle  but with practice becomes clear.
+
+Working with a classmate as a driver/navigator pair is a solid way to 
+help us learn how to work together in this circumstance. I look forward
+to future partner projects. 
