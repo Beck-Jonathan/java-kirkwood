@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Chapter2/Chapter2.iml" filepath="$PROJECT_DIR$/Chapter2/Chapter2.iml" />
       <module fileurl="file://$PROJECT_DIR$/CodeGymTasks.iml" filepath="$PROJECT_DIR$/CodeGymTasks.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DayOne/DayOne1.iml" filepath="$PROJECT_DIR$/DayOne/DayOne1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PartnerAssignments/PartnerAssignments.iml" filepath="$PROJECT_DIR$/PartnerAssignments/PartnerAssignments.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DayTwo/day_two.iml" filepath="$PROJECT_DIR$/DayTwo/day_two.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CourseDemos/CourseDemos.iml" filepath="$PROJECT_DIR$/CourseDemos/CourseDemos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CourseDemos/src/Chaper1_2/DayOne/DayOne1.iml" filepath="$PROJECT_DIR$/CourseDemos/src/Chaper1_2/DayOne/DayOne1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CourseDemos/PartnerAssignments/PartnerAssignments.iml" filepath="$PROJECT_DIR$/CourseDemos/PartnerAssignments/PartnerAssignments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CourseDemos/src/Chaper1_2/DayTwo/day_two.iml" filepath="$PROJECT_DIR$/CourseDemos/src/Chaper1_2/DayTwo/day_two.iml" />
     </modules>
   </component>
 </project>
