@@ -21,16 +21,18 @@ public class GuessTheLetter {
                 System.out.println("You guessed correctly!");
                 break;
             } else {
-                if (count > 0) {
+                if (count > 1) {
                     count--;
+                    String plural= count !=1 ? "ves" : "fe";
 
                         if (guess.compareToIgnoreCase( answer)>0) {
-                            System.out.printf("guess lower, you have %s lives remaining",count);
+                            System.out.printf("guess lower, you have %s li%s remaining",count,plural);
                         } else {
-                            System.out.printf("guess higher you have %s lives remaining",count);
+                            System.out.printf("guess higher you have %s li%s remaining",count,plural);
                         }
                     } else {
-                        System.out.println("out of guesses");
+                        System.out.printf("out of guesses, answer was %s" ,answer);
+                        break;
                     }
                 }
             }
