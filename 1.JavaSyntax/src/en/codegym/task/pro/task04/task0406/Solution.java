@@ -8,7 +8,15 @@ We show what we get
 
 public class Solution {
     public static void main(String[] args) {
-        //write your code here
+        Scanner getter = new Scanner(System.in);
+        String text;
+        while (true){
+            text = getter.nextLine();
+            if (text.equals("enough")){
+                break;
+            }
+            else {System.out.println(text);}
+        }
 
     }
 }

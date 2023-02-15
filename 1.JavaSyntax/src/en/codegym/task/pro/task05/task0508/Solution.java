@@ -10,30 +10,26 @@ public class Solution {
     public static String[] strings;
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
+        Scanner banana = new Scanner(System.in);
         strings = new String[6];
-        for (int i = 0; i < 6; i++) {
-            strings[i] = scanner.nextLine();
+        int length=strings.length;
+        for (int i =0;i<6;i++) {
+            String text = banana.nextLine();
+            strings[i]=text;
         }
-
-        for (int i = 0; i < strings.length; i++) {
-            String currentString = strings[i];
-            for (int j = i + 1; j < strings.length; j++) {
-                if (currentString == null) {
-                    break;
-                }
-                if (currentString.equals(strings[j])) {
-                    strings[j] = null;
-                    strings[i] = null;
+        for (int i=0;i<length-1;i++){
+            for (int j=i+1;j<length;j++){
+                if (strings[1]==null) {break;}
+                if (strings[j]==null){break;}
+                if (strings[i].equalsIgnoreCase((strings[j]))){
+                    strings[i]=null;
+                    strings[j]=null;
                 }
             }
         }
+
         for (int i = 0; i < strings.length; i++) {
             System.out.print(strings[i] + ", ");
         }
-
-
-        }
     }
-
+}

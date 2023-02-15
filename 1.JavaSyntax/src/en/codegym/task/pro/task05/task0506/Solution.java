@@ -17,7 +17,7 @@ public class Solution {
             array[i]=getter.nextInt();
         }
         int x =array.length;
-        int min =99999;
+        int min =Integer.MAX_VALUE;
         for (int y=0;y<x;y++){
             if (array[y]<min){
                 min = array[y];

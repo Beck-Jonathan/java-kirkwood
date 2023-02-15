@@ -1,27 +1,51 @@
 package en.codegym.task.pro.task04.task0405;
+public class Solution {
+public static void main(String[]args){
 
-/* 
+
+/*
 Unfilled rectangle
 */
 
-public class Solution {
-    public static void main(String[] args) {
-        int height = 1;
-        while (height <= 10) {
-            int width = 1;
-            while (width <= 20) {
-                if (height == 1 || height == 10) {
-                    System.out.print('B');
-                } else if (width == 1 || width == 20) {
-                    System.out.print('B');
-                } else {
-                    System.out.print(' ');
+//        BBBBBBBBBBBBBBBBBBBB
+//        B                  B
+//        B                  B
+//        B                  B
+//        B                  B
+//        B                  B
+//        B                  B
+//        B                  B
+//        B                  B
+//        BBBBBBBBBBBBBBBBBBBB
+
+
+     int height = 10;
+     int width = 20;
+
+
+        int i = 0; // row count
+        while (i < height) {
+            int j = 0; // column count
+            if (i == 0 || i == height - 1) {
+                // Print the first and last row
+                while (j < width) {
+                    System.out.print("B");
+                    j++;
                 }
-                width++;
+            } else {
+                // print the first and last column
+                while (j < width) {
+                    if (j == 0 || j == width - 1) {
+                        System.out.print("B");
+                    } else {
+                        System.out.print(" ");
+                    }
+                    j++;
+                }
             }
+            i++;
             System.out.println();
-            height++;
         }
+
     }
 }
-

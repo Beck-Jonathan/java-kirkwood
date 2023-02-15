@@ -13,7 +13,7 @@ public class Solution {
         Scanner getter = new Scanner(System.in);
         int n = getter.nextInt();
         array = new int[n];
-        int max = -10000;
+        int max = Integer.MIN_VALUE;
         for (int i = 0; i < n; i++) {
             array[i] = getter.nextInt();
         }

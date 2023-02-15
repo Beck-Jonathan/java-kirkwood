@@ -10,17 +10,21 @@ public class Solution {
     public static int[] resultArray;
 
     public static void main(String[] args) {
-        resultArray = new int[firstArray.length + secondArray.length];
-        for (int i = 0; i < firstArray.length; i++) {
-            resultArray[i] = firstArray[i];
+        int first_length=firstArray.length;
+        int total_length = firstArray.length+secondArray.length;
+        resultArray = new int[total_length];
+        for (int i =0;i<total_length;i++){
+            for (int j =0;j<first_length;j++){
+                resultArray[j]=firstArray[j];
+            }
+            for (int j=first_length;j<total_length;j++){
+                resultArray[j]=secondArray[j-first_length];
+            }
         }
-        for (int i = 0; i < secondArray.length; i++) {
-            resultArray[i + firstArray.length] = secondArray[i];
-        }
-
         for (int i = 0; i < resultArray.length; i++) {
             System.out.print(resultArray[i] + ", ");
         }
     }
 }
+
 
