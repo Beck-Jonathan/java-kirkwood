@@ -12,7 +12,7 @@ public class GuessTheLetter {
         int max = 90;
         int randomNumber = random.nextInt(max + 1 - min) + min;
         answer = (char) randomNumber + ""; //cast int as char, then convert to string
-        System.out.println((answer));
+        //System.out.println((answer));
         System.out.println("Guess the letter?");
         int count = 5;
         while (true) {

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class MainMenu {
     public static void main(String[] args) {
         //final project is a representation of a real life thing
         //task is to come up with somethat is not a book
