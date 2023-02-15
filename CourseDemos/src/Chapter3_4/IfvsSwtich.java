@@ -53,7 +53,8 @@ public class IfvsSwtich {
             }
         }
         taxes = taxRate * annualIncmoe;
-        System.out.printf("You are in the tier %d tax bracket, your tax rate is %.2f, you owe $%.2f", taxBracket, taxRate, taxes);
+        System.out.printf("You are in the tier %d tax bracket, " +
+                "your tax rate is %.2f, you owe $%.2f \n", taxBracket, taxRate, taxes);
 
     }
 }
