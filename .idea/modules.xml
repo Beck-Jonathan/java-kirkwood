@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/1.JavaSyntax/1.JavaSyntax.iml" filepath="$PROJECT_DIR$/1.JavaSyntax/1.JavaSyntax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.JavaCore/2.JavaCore.iml" filepath="$PROJECT_DIR$/2.JavaCore/2.JavaCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.JavaMultithreading/3.JavaMultithreading.iml" filepath="$PROJECT_DIR$/3.JavaMultithreading/3.JavaMultithreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4.JavaCollections/4.JavaCollections.iml" filepath="$PROJECT_DIR$/4.JavaCollections/4.JavaCollections.iml" />
+
       <module fileurl="file://$PROJECT_DIR$/CodeGymTasks.iml" filepath="$PROJECT_DIR$/CodeGymTasks.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CourseDemos/CourseDemos.iml" filepath="$PROJECT_DIR$/CourseDemos/CourseDemos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CourseDemos/src/Chaper1_2/DayOne/DayOne1.iml" filepath="$PROJECT_DIR$/CourseDemos/src/Chaper1_2/DayOne/DayOne1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FinalProject/FinalProject.iml" filepath="$PROJECT_DIR$/FinalProject/FinalProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CourseDemos/PartnerAssignments/PartnerAssignments.iml" filepath="$PROJECT_DIR$/CourseDemos/PartnerAssignments/PartnerAssignments.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CourseDemos/src/Chaper1_2/DayTwo/day_two.iml" filepath="$PROJECT_DIR$/CourseDemos/src/Chaper1_2/DayTwo/day_two.iml" />
     </modules>
   </component>
 </project>
