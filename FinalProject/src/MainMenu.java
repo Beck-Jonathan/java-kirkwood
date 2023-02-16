@@ -25,22 +25,22 @@ public class MainMenu {
             choice = banana.nextInt();
             switch (choice) {
                 case 1:
-                    System.out.println("list all heroes");
+                    System.out.println("list all releases");
                     break;
                 case 2:
-                    System.out.println("sort all heroes");
+                    System.out.println("sort all releases");
                     break;
                 case 3:
-                    System.out.println("find a hero ");
+                    System.out.println("find a releases ");
                     break;
                 case 4:
-                    System.out.println("add a hero");
+                    System.out.println("add a releases");
                     break;
                 case 5:
-                    System.out.println("update a hero");
+                    System.out.println("update a releases");
                     break;
                 case 6:
-                    System.out.println("remove a hero");
+                    System.out.println("remove a releases");
                     break;
                 default:
                     break outer;
