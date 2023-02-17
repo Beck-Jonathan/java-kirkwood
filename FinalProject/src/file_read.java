@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class file_read {
-    public static void main(String[] args) {
+    public static ArrayList file(){
         List<List<String>> games = new ArrayList<List<String>>();
         String a;
         String[] b;
@@ -20,7 +20,8 @@ public class file_read {
                 IOException exc) {
             System.out.println("file not found");
         }
-        System.out.println(games);
+        return (ArrayList) games;
+
 
 
     }

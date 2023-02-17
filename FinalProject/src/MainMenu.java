@@ -1,4 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+
 
 public class MainMenu {
     public static void main(String[] args) {
@@ -17,6 +20,8 @@ public class MainMenu {
         System.out.println("Hello world!");
         Scanner banana = new Scanner(System.in);
         int choice = 0;
+        List<List<String>> games = new ArrayList<List<String>>();
+        games=file_read.file();
         System.out.println("Choose your option, 1 through 7");
 
 
@@ -25,7 +30,10 @@ public class MainMenu {
             choice = banana.nextInt();
             switch (choice) {
                 case 1:
-                    System.out.println("list all releases");
+                {System.out.println("list all releases");
+                    for (int i=0;i<games.size();i++){
+                        System.out.println(games.get(i));}
+                }
                     break;
                 case 2:
                     System.out.println("sort all releases");
