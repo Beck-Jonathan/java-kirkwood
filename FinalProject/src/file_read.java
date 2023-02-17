@@ -26,7 +26,10 @@ public class file_read {
                 IOException exc) {
             System.out.println("file not found");
         }
-        return (ArrayList) games;
+        ArrayList sorted = new ArrayList();
+        sorted= (ArrayList) games;
+        System.out.println( sorted.get(1));
+        return sorted;
 
 
 
