@@ -16,6 +16,8 @@ public class file_read {
                 b=a.split("\t");
                 //System.out.println(b[0]);
                 games.add(Arrays.asList(b[0],b[1],b[6]));}
+              //  string name = b[0]
+            //new release <release()>;
                  // String x = b[0];
                 //double d =(double) b[1];
                 //String c=b[6];
