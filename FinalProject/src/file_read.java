@@ -16,10 +16,10 @@ public class file_read {
                 b=a.split("\t");
                 //System.out.println(b[0]);
                 games.add(Arrays.asList(b[0],b[1],b[6]));}
-                  String x = b[0];
-                double d =(double) b[1];
-                String c=b[6];
-                release y = new release(a,d,c);
+                 // String x = b[0];
+                //double d =(double) b[1];
+                //String c=b[6];
+               // release y = new release(a,d,c);
         } catch (
                 IOException exc) {
             System.out.println("file not found");
