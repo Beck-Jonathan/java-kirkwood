@@ -9,14 +9,7 @@ public class Solution {
     public static int[] array = new int[]{-1, 2, 3, -4, -5};
 
     public static void main(String[] args) {
-        int i = 0;
-        while (i < array.length) {
-            if (i % 2 == 0) {
-                array[i] = -array[i];
-            }
-            i++;
-        }
-
+        while (i<int[].Length())
 
         System.out.println(array[0]);
         System.out.println(array[1]);
