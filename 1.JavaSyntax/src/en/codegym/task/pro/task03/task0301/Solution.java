@@ -11,10 +11,11 @@ public class Solution {
         String cold = "It's cold outside";
         String warm = "It's warm outside";
         Scanner scanner = new Scanner(System.in);
-        int temp=scanner.nextInt();
-        if (temp<0)
-        System.out.println("It's cold outside");
-        else
-        System.out.println("It's warm outside");
+        int temp = scanner.nextInt();
+        if (temp < 0) {
+            System.out.println("It's cold outside");
+        } else {
+            System.out.println("It's warm outside");
+        }
     }
 }

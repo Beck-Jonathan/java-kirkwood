@@ -12,7 +12,7 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         String name =scanner.nextLine();
         int age=scanner.nextInt();
-        if (age>=18&&age<=28)
-        System.out.println(name+militaryCommissar);
+        if (age >= 18 && age <= 28)
+        System.out.println(name + militaryCommissar);
     }
 }

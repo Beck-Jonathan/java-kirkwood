@@ -11,7 +11,7 @@ public class Solution {
         int y = 4;
         int z = 0;
 
-        String digits = (x+y)+""+(z); //write your code here
+        String digits = (x+y) + "" + (z); //write your code here
 
         System.out.println(digits);
     }

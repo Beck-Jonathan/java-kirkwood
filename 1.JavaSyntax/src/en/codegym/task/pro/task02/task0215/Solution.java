@@ -13,7 +13,7 @@ public class Solution {
         int a = console.nextInt();
         int b=console.nextInt();
         int c=console.nextInt();
-        int average=(a+b+c)/3;
+        int average=(a + b + c) / 3;
         System.out.println(average);
 
     }

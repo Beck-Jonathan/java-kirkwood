@@ -10,6 +10,6 @@ public class Solution {
         String  name;
         int age;
         String city;
-;
+
     }
 }
