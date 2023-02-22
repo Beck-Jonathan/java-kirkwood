@@ -64,7 +64,7 @@ public class UserInput {
         do {
             System.out.print(prompt + "[Yes or No]: ");
             value = banana.nextLine();
-            banana.nextLine();
+
 
         } while (!value.equalsIgnoreCase("Yes") &&
                 !value.equalsIgnoreCase("No") &&

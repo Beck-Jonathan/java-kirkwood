@@ -42,7 +42,8 @@ public class MainMenu {
                 }
                     break;
                 case 2:
-                    System.out.println("sort all releases");
+                    System.out.println("boolean test");
+                    UserInput.getBoolean(banana,"yes or no");
                     break;
                 case 3:
                     System.out.println("find a releases ");
