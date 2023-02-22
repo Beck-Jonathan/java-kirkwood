@@ -1,8 +1,11 @@
 import utilities.FileRead;
+import utilities.UserInput;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import static utilities.UserInput.getInt;
 
 
 public class MainMenu {
@@ -19,22 +22,23 @@ public class MainMenu {
         // use chapter 16 to make visual gui for extra credit
         // use javafx to make visual gui for other extra credit
         //make sure to close the scanner when you have multiple users
-        System.out.println("Hello world!");
         Scanner banana = new Scanner(System.in);
-        int choice = 0;
-        List<List<String>> games = new ArrayList<List<String>>();
-        games= FileRead.file();
+        int choice;
+        //List<List<String>> games = new ArrayList<List<String>>();
+        //games= FileRead.file();
         System.out.println("Choose your option, 1 through 7");
 
 
         //view all books, create a book, read info about a book, update book, delete book
         outer: while (true) {
-            choice = banana.nextInt();
+
+            choice = getInt(banana, "pick menu option");
+
             switch (choice) {
                 case 1:
                 {System.out.println("list all releases");
-                    for (int i=0;i<games.size();i++){
-                        System.out.println(games.get(i));}
+                    //for (int i=0;i<games.size();i++){
+                       // System.out.println(games.get(i));}
                 }
                     break;
                 case 2:
@@ -44,7 +48,8 @@ public class MainMenu {
                     System.out.println("find a releases ");
                     break;
                 case 4:
-                    System.out.println("add a releases");
+                    System.out.println("add a release");
+                    String title =UserInput.getString(banana, "game title");
                     //prompt for name, price, release date, # of pages, etc. check for validity
                     break;
                 case 5:
