@@ -46,18 +46,21 @@ public class MainMenu {
                     UserInput.getBoolean(banana,"yes or no");
                     break;
                 case 3:
-                    System.out.println("find a releases ");
+                    System.out.println("min test 1 ");
+                    int numPages = UserInput.getInt(banana, "Enter the number of pages", 1);
                     break;
                 case 4:
-                    System.out.println("add a release");
+                    System.out.println("get title");
                     String title =UserInput.getString(banana, "game title");
                     //prompt for name, price, release date, # of pages, etc. check for validity
                     break;
                 case 5:
-                    System.out.println("update a releases");
+                    System.out.println("input nil test");
+                    int numPagestest = UserInput.getInt(banana, "Enter the number of pages");
                     break;
                 case 6:
-                    System.out.println("remove a releases");
+                    System.out.println("input model year test");
+                    int modelyeartest = UserInput.getInt(banana,"enter modlel year",1890,2024);
                     break;
                 default:
                     break outer;

@@ -51,3 +51,25 @@ Working with a classmate as a driver/navigator pair is a solid way to
 help us learn how to work together in this circumstance. I look forward
 to future partner projects. Communicating `System.out.println()` has never 
 been so challenging and rewarding.
+
+## Weeks 5 and 6
+I'm learning much about loops and building a frameowrk to quickly
+diagnose errors within them. Knowing what the loop will do
+without having to run it is keep. .
+
+For example, if I wanted to print the numbers 0 through 5 inclusive,
+I could use the following
+
+```java
+public class MyClass {
+    public static void main(String[] args) {
+        for (int i = 0; i <=5,1++){
+            System.out.println(i);
+        }
+    }
+
+
+```
+Knowing this will start at 0, and print 5 inclusive, thanks to the <= comparison.
+While this seems trivail now, it will be more important as I make loops
+with complexity.
