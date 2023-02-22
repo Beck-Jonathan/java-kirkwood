@@ -32,14 +32,14 @@ Going forward, whenever I complete a task I will **Add-Commit-Push (ACP)**
     - git push origin main :rocket:
 
 ## Weeks 3 and 4
-Overall I am having a growing comfort stepping out of my Phthon 
+Overall I am having a growing comfort stepping out of my Python 
 shell and not letting syntax differences concern me.
 
-A large skill being developed is reading documenttation and applying it.
+A large skill being developed is reading documentation and applying it.
 the [JetBrains IDE](https://www.jetbrains.com/idea/download/) 
 has fantastic integrated tooltips to explain your errors quickly.
 
-Learng about the object-oriented core tenents of
+Learng about the object-oriented core tenants of
 * **Encapsulation**
 * **Inheritance**
 * **Polymorphism**
