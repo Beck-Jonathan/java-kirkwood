@@ -1,9 +1,11 @@
+package utilities;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class file_read {
+public class FileRead {
     public static ArrayList file(){
         List<List<String>> games = new ArrayList<List<String>>();
         String a;

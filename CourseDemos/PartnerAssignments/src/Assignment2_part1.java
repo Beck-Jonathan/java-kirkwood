@@ -6,12 +6,14 @@ public class Assignment2_part1 {
         System.out.println("Enter a number: ");
         double user_input=scanner.nextDouble();
         if (user_input%2==0) {
-            System.out.println(user_input + " is even");
+            int answer = (int) user_input;
+            System.out.printf("%s is even",answer);
         }else if(user_input%2==1){
-            System.out.println(user_input + " is odd");
+            int answer = (int) user_input;
+            System.out.printf("%s is odd",answer);
         }else {
             System.out.println(user_input+" is neither odd nor even");
-            
+
         }
     }
 }

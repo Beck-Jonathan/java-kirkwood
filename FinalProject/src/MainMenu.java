@@ -1,3 +1,5 @@
+import utilities.FileRead;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -21,7 +23,7 @@ public class MainMenu {
         Scanner banana = new Scanner(System.in);
         int choice = 0;
         List<List<String>> games = new ArrayList<List<String>>();
-        games=file_read.file();
+        games= FileRead.file();
         System.out.println("Choose your option, 1 through 7");
 
 
@@ -43,6 +45,7 @@ public class MainMenu {
                     break;
                 case 4:
                     System.out.println("add a releases");
+                    //prompt for name, price, release date, # of pages, etc. check for validity
                     break;
                 case 5:
                     System.out.println("update a releases");
