@@ -12,8 +12,8 @@ public class Solution {
         String s = getter.nextLine();
         String text = " loves me.";
         int i = 0;
-        while (i<10){
-            System.out.println(s+text);
+        while (i < 10) {
+            System.out.println(s + text);
             i++;
         }
         //write your code here

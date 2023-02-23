@@ -16,7 +16,7 @@ result[i] = new int[i+1];}
             result[i][j]=i+j;
             System.out.print(result[i][j] + " ");
         }
-        System.out.println("");
+        System.out.println();
         
             
         }

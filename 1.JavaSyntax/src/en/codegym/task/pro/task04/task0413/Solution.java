@@ -9,7 +9,7 @@ public class Solution {
         for (int i =1;i<=10;i++){
             for (int leg_length=i;leg_length>0;leg_length--) {
             System.out.print("8");}
-            System.out.println("");
+            System.out.println();
         }
 
     }

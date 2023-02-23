@@ -20,7 +20,6 @@ public class Solution {
         else {
             System.out.println(TRIANGLE_DOES_NOT_EXIST);
         }
-        ;
         //write your code here
     }
 }
