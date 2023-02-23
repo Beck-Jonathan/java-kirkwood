@@ -13,7 +13,7 @@ public class Solution {
         return a * a * a;
     }
 
-    public static long ninthDegree(long b){
+    public static long ninthDegree(long b) {
         long c = cube(b);
         long d = cube(c);
         return d;

@@ -9,8 +9,8 @@ public class Solution {
         //write your code here
         System.out.println("For sweetest things turn sourest by their deeds;");
         System.out.println("Lilies that fester smell far worse than weeds.");
-        
+
     }
 
-    
+
 }

@@ -11,7 +11,9 @@ public class Solution {
     }
 
     public static void signIn(String username) {
-        if (username=="user"){return;}
+        if (username == "user") {
+            return;
+        }
         System.out.println("Welcome, " + username);
         System.out.println("We've really missed you, " + username);
     }

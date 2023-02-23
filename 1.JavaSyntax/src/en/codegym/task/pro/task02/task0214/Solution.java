@@ -11,7 +11,7 @@ public class Solution {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         String first = console.nextLine();
-        first= first.toLowerCase();
+        first = first.toLowerCase();
         String second = console.nextLine();
         second = second.toUpperCase();
         String third = console.nextLine();

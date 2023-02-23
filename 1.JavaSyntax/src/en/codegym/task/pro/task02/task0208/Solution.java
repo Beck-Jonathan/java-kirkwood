@@ -9,7 +9,7 @@ public class Solution {
     public static void main(String[] args) {
         String emptiness = "emptiness";
 
-        String fullness = emptiness+" "+emptiness+" "+emptiness; //write your code here
+        String fullness = emptiness + " " + emptiness + " " + emptiness; //write your code here
 
         System.out.println(fullness);
     }

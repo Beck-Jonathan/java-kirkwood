@@ -6,17 +6,17 @@ Filled rectangle
 
 public class Solution {
     public static void main(String[] args) {
-        int count=0;
-        int second_count=0;
-        while (count<5) {
-            while (second_count<10){
+        int count = 0;
+        int second_count = 0;
+        while (count < 5) {
+            while (second_count < 10) {
                 System.out.print("Q");
                 second_count++;
             }
-            count+=1;
+            count += 1;
             System.out.print("\n");
-            second_count=0;
+            second_count = 0;
         }
-        }
-
     }
+
+}

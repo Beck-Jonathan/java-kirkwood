@@ -7,7 +7,7 @@ Declare variables
 
 public class Solution {
     public static void main(String[] args) {
-        String  name;
+        String name;
         int age;
         String city;
 

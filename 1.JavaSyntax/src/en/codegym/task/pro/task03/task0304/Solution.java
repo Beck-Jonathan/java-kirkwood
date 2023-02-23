@@ -13,8 +13,8 @@ public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double bodyTemperature = scanner.nextDouble();
-        isHigh=bodyTemperature >37;
-        isLow=bodyTemperature < 36;
+        isHigh = bodyTemperature > 37;
+        isLow = bodyTemperature < 36;
         if (isHigh) {
             System.out.println("Body temperature is high");
         } else if (isLow) {

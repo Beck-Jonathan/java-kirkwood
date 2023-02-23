@@ -11,12 +11,14 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner banana = new Scanner(System.in);
-        int r=banana.nextInt();
-        multiArray = new int [r][];
-        for (int i=0;i<r;i++){
-             {int j=banana.nextInt();
-             multiArray[i] = new int[j];}
-            
+        int r = banana.nextInt();
+        multiArray = new int[r][];
+        for (int i = 0; i < r; i++) {
+            {
+                int j = banana.nextInt();
+                multiArray[i] = new int[j];
+            }
+
         }
     }
 }

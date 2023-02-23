@@ -1,6 +1,7 @@
 package en.codegym.task.pro.task04.task0405;
+
 public class Solution {
-public static void main(String[]args){
+    public static void main(String[] args) {
 
 
 /*
@@ -19,8 +20,8 @@ Unfilled rectangle
 //        BBBBBBBBBBBBBBBBBBBB
 
 
-     int height = 10;
-     int width = 20;
+        int height = 10;
+        int width = 20;
 
 
         int i = 0; // row count

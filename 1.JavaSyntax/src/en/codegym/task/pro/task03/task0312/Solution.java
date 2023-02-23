@@ -12,11 +12,9 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         String a = scanner.nextLine();
         String b = scanner.nextLine();
-        if (a.equals(b))
-        {
+        if (a.equals(b)) {
             System.out.println("The strings are the same");
-        }
-        else{
+        } else {
             System.out.println("The strings are different");
         }
     }

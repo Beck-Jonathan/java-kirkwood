@@ -14,9 +14,9 @@ public class Solution {
         int multiple = scanner.nextInt();
 
         int sum = 0;
-        for (int i=start;i<end;i++)
-        {if ( (i%multiple)!=0) continue;
-        sum=sum+i;
+        for (int i = start; i < end; i++) {
+            if ((i % multiple) != 0) continue;
+            sum = sum + i;
         }
         //write your code here
 

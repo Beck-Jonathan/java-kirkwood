@@ -6,7 +6,7 @@ The struggle for access
 
 public class Solution {
     public static void main(String[] args) {
-        
+
         Person person = new Person("John", "Dane");
         System.out.println("Dossier:");
         System.out.println("First name: " + person.getFirstName());

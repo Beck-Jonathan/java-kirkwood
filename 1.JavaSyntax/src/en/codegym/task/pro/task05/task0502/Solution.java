@@ -10,12 +10,12 @@ public class Solution {
     public static String[] strings = new String[5];
 
     public static void main(String[] args) {
-        
-        strings[0]=EVEN;
-        strings[1]=ODD;
-        strings[2]=EVEN;
-        strings[3]=ODD;
-        strings[4]=EVEN;
+
+        strings[0] = EVEN;
+        strings[1] = ODD;
+        strings[2] = EVEN;
+        strings[3] = ODD;
+        strings[4] = EVEN;
         System.out.print("index = 0");
         System.out.println(" value = " + strings[0]);
         System.out.print("index = 1");

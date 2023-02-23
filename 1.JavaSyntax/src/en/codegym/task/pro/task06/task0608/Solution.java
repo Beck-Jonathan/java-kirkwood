@@ -9,9 +9,9 @@ public class Solution {
 
     }
 
-    public static long cube(long x){
-        long cube = x*x*x;
+    public static long cube(long x) {
+        long cube = x * x * x;
         return cube;
-        
+
     }
 }
