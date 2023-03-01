@@ -28,8 +28,10 @@ public class feb_28 {
         lottoNumbers[4] = getRandomNum(1,75);
         lottoNumbers[5] = getRandomNum(1,40);
         // Printing arrays is much more complicated
+        int [] first_five=Arrays.copyOfRange(lottoNumbers,0,5);
+        Arrays.sort(first_five);
         System.out.println(lottoNumbers);
-        System.out.println(Arrays.toString(lottoNumbers));
+        System.out.println(Arrays.toString(first_five));
         // There are two ways to loop through arrays
         // count-controlled loop
         for(int i = 0; i < lottoNumbers.length - 1; i++) {
