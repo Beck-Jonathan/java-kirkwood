@@ -5,6 +5,7 @@ Executing a snippet of code
 */
 
 public class Solution {
+    //need to add notes here based on class teaching
 
     public static int result = 45967;
 

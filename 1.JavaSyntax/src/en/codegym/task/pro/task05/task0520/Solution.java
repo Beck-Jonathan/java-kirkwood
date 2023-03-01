@@ -5,7 +5,7 @@ Changing shoes on the move
 */
 
 public class Solution {
-
+//need to redo this based on class notes
     public static int result = 105;
 
     public static void main(String[] args) {
