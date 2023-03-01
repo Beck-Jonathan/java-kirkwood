@@ -21,7 +21,24 @@ public class feb_28 {
         lottonumbers[5]=GenLotto(1,40);
 
         System.out.println(Arrays.toString(lottonumbers));
+
+
+        int [ ] a = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        a[5] = a[3] + a[0];
+        System.out.println("a 5 is "+a[5]);
+
         //java arrays are fixed length
+        for (int i=0;i<lottonumbers.length-1;i++){
+            System.out.println(lottonumbers[i]);
+        }
+        System.out.println("The PowerBall is " + lottonumbers[lottonumbers.length-1]);
+        // there are two ways to loop. Above is a count controller loop
+        //below a for each loop
+        // data type, followed by variable name, colon, array name
+        for(int lottonumber : lottonumbers){
+            System.out.println(lottonumber);
+        }
+
     }
 
     private static int GenLotto(int min, int max) {

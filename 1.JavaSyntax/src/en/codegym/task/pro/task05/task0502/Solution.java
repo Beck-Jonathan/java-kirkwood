@@ -11,11 +11,14 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        strings[0] = EVEN;
-        strings[1] = ODD;
-        strings[2] = EVEN;
-        strings[3] = ODD;
-        strings[4] = EVEN;
+        for (int i = 0; i < strings.length; i++) {
+            if (i % 2 == 0) {
+                strings[i] = "EVEN";
+            }
+        else{
+                strings[i] = "ODD";
+            }
+        }
         System.out.print("index = 0");
         System.out.println(" value = " + strings[0]);
         System.out.print("index = 1");
