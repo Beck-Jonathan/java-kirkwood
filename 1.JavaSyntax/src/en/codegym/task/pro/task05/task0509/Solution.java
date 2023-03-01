@@ -12,9 +12,9 @@ public class Solution {
         MULTIPLICATION_TABLE = new int[10][10];
         for (int x = 1; x < 11; x++) {
             for (int y = 1; y < 11; y++) {
-                MULTIPLICATION_TABLE[x][y] = (x * y);
-                System.out.print(MULTIPLICATION_TABLE[x][y]);
-                System.out.println(", ");
+                MULTIPLICATION_TABLE[x-1][y-1] = (x * y);
+                System.out.print(MULTIPLICATION_TABLE[x-1][y-1]);
+                System.out.print(", ");
             }
             System.out.println();
         }
