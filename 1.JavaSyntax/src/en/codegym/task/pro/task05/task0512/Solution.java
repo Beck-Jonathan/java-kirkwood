@@ -18,6 +18,7 @@ public class Solution {
 
                     System.out.print(multiArray[a][b][c] + " ");
                 }
+                System.out.println("");
             }
         }
     }
