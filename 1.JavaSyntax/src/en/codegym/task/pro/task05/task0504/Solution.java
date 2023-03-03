@@ -11,13 +11,15 @@ public class Solution {
 
     public static void main(String[] args) {
         resultArray = new int[firstArray.length + secondArray.length];
-        int count = 0;
-        for(; count < firstArray.length; count++) {
-            resultArray[count] = firstArray[count];
+        for (int i = 0; i < firstArray.length; i++) {
+            resultArray[i] = firstArray[i];
+            //System.out.println(resultArray[i]);
         }
-        for(int num: secondArray) {
-            resultArray[count++] = num;
+        for (int i = firstArray.length; i < resultArray.length; i++) {
+            resultArray[i] = secondArray[i - firstArray.length];
+            //System.out.println(resultArray[i]);
         }
+
         for (int i = 0; i < resultArray.length; i++) {
             System.out.print(resultArray[i] + ", ");
         }
