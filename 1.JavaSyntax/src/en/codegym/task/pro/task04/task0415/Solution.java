@@ -10,8 +10,9 @@ public class Solution {
     public static void main(String[] args) {
         Scanner getter = new Scanner(System.in);
         int radius = getter.nextInt();
-        int area = (int) (3.14 * radius * radius);
-        System.out.println(area);
-
+        if (radius >= 0) {    //updated to print nothing if a negatve value is entered
+            int area = (int) (3.14 * radius * radius);
+            System.out.println(area);
+        }
     }
 }

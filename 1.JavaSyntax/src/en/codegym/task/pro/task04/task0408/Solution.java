@@ -8,12 +8,15 @@ Maximum of entered numbers
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner console = new Scanner(System.in);
+        Scanner banana = new Scanner(System.in); //renamed scanner object
         int max = Integer.MIN_VALUE;
-        while (console.hasNextInt()) {
-            int x = console.nextInt();
-            if ((x % 2 == 0) && (x > max)) {
-                max = x;
+        while (banana.hasNextInt()) {
+            int x = banana.nextInt();  // per codegym intructions
+            if (x%2 ==0) {
+                int test =x;
+                if (test>max){
+                    max=test;  // this section rewritten to differentiate from code gym a bit
+                }
             }
 
         }

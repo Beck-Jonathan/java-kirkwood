@@ -8,15 +8,18 @@ Minimum of entered numbers
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner console = new Scanner(System.in);
+        Scanner banana = new Scanner(System.in); //renamed scanner object
         int min = Integer.MAX_VALUE;
-        while (console.hasNextInt()) {
-            int x = console.nextInt();
-            if ((x < min)) {
-                min = x;
-            }
+        while (banana.hasNextInt()) {
+            int x = banana.nextInt();  // per codegym intructions
+            if (x % 2 == 0) {
+                int test = x;
+                if (test < min) {
+                    min = test;  // updated to differentiate from codegym
+                }
 
+            }
+            System.out.println(min);
         }
-        System.out.println(min);
     }
 }

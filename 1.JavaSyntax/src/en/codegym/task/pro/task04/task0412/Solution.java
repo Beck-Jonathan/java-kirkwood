@@ -15,8 +15,9 @@ public class Solution {
 
         int sum = 0;
         for (int i = start; i < end; i++) {
-            if ((i % multiple) != 0) continue;
-            sum = sum + i;
+            if ((i % multiple) == 0) {
+                sum = sum + i;
+            }
         }
         //write your code here
 
