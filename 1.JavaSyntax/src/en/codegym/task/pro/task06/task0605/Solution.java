@@ -4,6 +4,9 @@ package en.codegym.task.pro.task06.task0605;
 Correct order
 */
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Solution {
 
     public static void main(String[] args) {
@@ -15,9 +18,10 @@ public class Solution {
 
     public static void reverseArray(int[] array) {
         for (int i = 0; i < array.length / 2; i++) {
-            int temp = array[i];
-            array[i] = array[array.length - i - 1];
-            array[array.length - i - 1] = temp;
+           // int holder = array[i];
+            //array[i] = array[array.length - i - 1];
+            //array[array.length - i - 1] = holder;
+            Collections.reverse(Arrays.asList(array));
         }
     }
 
