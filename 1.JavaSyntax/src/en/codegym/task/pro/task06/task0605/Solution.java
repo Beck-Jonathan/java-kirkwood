@@ -21,7 +21,7 @@ public class Solution {
            // int holder = array[i];
             //array[i] = array[array.length - i - 1];
             //array[array.length - i - 1] = holder;
-            Collections.reverse(Arrays.asList(array));
+            Collections.reverse(Arrays.asList(array));  // from class teachings
         }
     }
 

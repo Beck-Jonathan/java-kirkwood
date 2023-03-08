@@ -53,9 +53,9 @@ to future partner projects. Communicating `System.out.println()` has never
 been so challenging and rewarding.
 
 ## Weeks 5 and 6
-I'm learning much about loops and building a frameowrk to quickly
+I'm learning much about loops and building a framework to quickly
 diagnose errors within them. Knowing what the loop will do
-without having to run it is keep. .
+without having to run it is keep. 
 
 For example, if I wanted to print the numbers 0 through 5 inclusive,
 I could use the following
@@ -63,7 +63,7 @@ I could use the following
 ```java
 public class MyClass {
     public static void main(String[] args) {
-        for (int i = 0; i <=5,1++){
+        for (int i = 0; i <=5;1++){
             System.out.println(i);
         }
     }
@@ -71,5 +71,28 @@ public class MyClass {
 
 ```
 Knowing this will start at 0, and print 5 inclusive, thanks to the <= comparison.
-While this seems trivail now, it will be more important as I make loops
+While this seems trivial now, it will be more important as I make loops
 with complexity.
+
+## Weeks 7 and 8
+I'm learning about arrays and the different functions we have available
+within them. An Array is a fixed length set of variables of the same time. 
+For example, a list of 10 numbers. 
+
+Being as they are fixed length, and all of the same type, they are great candidates
+for looping through. For example
+```java
+public class MyClass {
+    public static void main(String[] args) {
+    int[] myArray = new Int[10];
+        for (int i = 0; i <=myArray.length;i++){
+            myArray[i]=(i+3);
+        }
+    }
+
+```
+will create an array of 10 integers. 
+Each value will you will be filled with a number 1 higher than it's index.
+That is, the first value (index zero), will be 3, the second number (index 1) 
+will be 4 and so on.
+

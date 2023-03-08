@@ -104,7 +104,7 @@ public class Assignment3 {
 
 
         char start = zodiac_sign.charAt(0);
-        System.out.println(start);
+        // System.out.println(start);
         if (start == 'A' || start == 'E' || start == 'I' || start == 'O' || start == 'U') {
             vowel_start = "n";
         }
