@@ -1,9 +1,12 @@
 import utilities.FileRead;
 import utilities.UserInput;
+import utilities.Helpers;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 
 import static utilities.UserInput.getInt;
 
@@ -23,6 +26,9 @@ public class MainMenu {
         // use javafx to make visual gui for other extra credit
         //make sure to close the scanner when you have multiple users
         Scanner banana = new Scanner(System.in);
+        LocalDate birthday = UserInput.getDate(banana, "enter your birthday");
+        System.out.println(Helpers.printDate(birthday));
+
         int choice;
         //List<List<String>> games = new ArrayList<List<String>>();
         //games= FileRead.file();
@@ -34,33 +40,24 @@ public class MainMenu {
 
             choice = getInt(banana, "pick menu option");
 
-            switch (choice) {
+            switch(choice) {
                 case 1:
-                {System.out.println("list all releases");
-                    //for (int i=0;i<games.size();i++){
-                       // System.out.println(games.get(i));}
-                }
+                    System.out.println("List all books");
                     break;
                 case 2:
-                    System.out.println("boolean test");
-                    UserInput.getBoolean(banana,"yes or no");
+                    System.out.println("Sort the books");
                     break;
                 case 3:
-                    System.out.println("min test 1 ");
-                    int numPages = UserInput.getInt(banana, "Enter the number of pages", 1);
+                    System.out.println("Find a book");
                     break;
                 case 4:
-                    System.out.println("get title");
-                    String title =UserInput.getString(banana, "game title");
-                    //prompt for name, price, release date, # of pages, etc. check for validity
+                    System.out.println("Add a book");
                     break;
                 case 5:
-                    System.out.println("input nil test");
-                    int numPagestest = UserInput.getInt(banana, "Enter the number of pages");
+                    System.out.println("Update a book");
                     break;
                 case 6:
-                    System.out.println("input model year test");
-                    int modelyeartest = UserInput.getInt(banana,"enter modlel year",1890,2024);
+                    System.out.println("Remove a book");
                     break;
                 default:
                     break outer;
