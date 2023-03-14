@@ -2,6 +2,7 @@ package en.codegym.task.pro.task06.task0612;
 
 /* 
 Everything has a root
+/not much to do here, just fixing a variable name
 */
 
 public class Solution {

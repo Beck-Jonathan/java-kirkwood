@@ -2,6 +2,7 @@ package en.codegym.task.pro.task06.task0611;
 
 /* 
 Analyzing arrays
+Not much to do here, just assigning access modifiers
 */
 
 public class Solution {
