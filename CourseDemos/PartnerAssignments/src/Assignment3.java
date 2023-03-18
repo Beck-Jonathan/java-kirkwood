@@ -24,21 +24,21 @@ public class Assignment3 {
             }
         }
         if (month.toString().equalsIgnoreCase("February")) {
-            if (day < 19) {
+            if (day < 20) {
                 zodiac_sign = "Aquarius";
             } else {
                 zodiac_sign = "Pisces";
             }
         }
         if (month.toString().equalsIgnoreCase("March")) {
-            if (day < 20) {
+            if (day < 21) {
                 zodiac_sign = "Pisces";
             } else {
                 zodiac_sign = "Aries";
             }
         }
         if (month.toString().equalsIgnoreCase("April")) {
-            if (day < 19) {
+            if (day < 21){
                 zodiac_sign = "Aries";
             } else {
                 zodiac_sign = "Taurus";
@@ -59,7 +59,7 @@ public class Assignment3 {
             }
         }
         if (month.toString().equalsIgnoreCase("July")) {
-            if (day < 21) {
+            if (day < 23) {
                 zodiac_sign = "Cancer";
             } else {
                 zodiac_sign = "Leo";
