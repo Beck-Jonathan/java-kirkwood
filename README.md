@@ -96,3 +96,29 @@ Each value will you will be filled with a number 1 higher than it's index.
 That is, the first value (index zero), will be 3, the second number (index 1) 
 will be 4 and so on.
 
+## Weeks 9 and 10
+
+I'm learning about methods 
+A method will have an access modifier, return type, parameters, and arguments.
+
+Access modifiers are "public" "private" or "protected"
+A "protected" method can only be accessed by methods in the same package
+A "private" method can only be used by the same class
+A "public" method can be used anywehre in the same source root.
+
+A return type is what the method calcuates and returns to the user.
+For example, Int X = (Math.Min(a,b,c));
+The Math.Min method will "return" or assign the lowest valuel of a b and c to the 
+variable x.
+Some functions return nothing, and in that case, the "return type" is void
+
+A parameter is the data type that a method accepts. 
+When reading the tool tip for System.out.PrintLn() it specifies
+that inside the parenthesis we should supply a "string".
+
+An argument are the actual data you pass to a method, and is assigned to the paremether
+For example, System.out.PrintLn("Jonathan") the argument placed in is "Jonathan"
+
+A static method requires you to type classname.methodname() for a static method
+or a non-static method requires you to type objectname.methodname()
+
