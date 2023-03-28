@@ -63,11 +63,11 @@ I could use the following
 ```java
 public class MyClass {
     public static void main(String[] args) {
-        for (int i = 0; i <=5;1++){
+        for (int i = 0; i <= 5; i++) {
             System.out.println(i);
         }
     }
-
+}
 
 ```
 Knowing this will start at 0, and print 5 inclusive, thanks to the <= comparison.
@@ -84,15 +84,16 @@ for looping through. For example
 ```java
 public class MyClass {
     public static void main(String[] args) {
-    int[] myArray = new Int[10];
-        for (int i = 0; i <=myArray.length;i++){
-            myArray[i]=(i+3);
+        int[] myArray = new Int[10];
+        for (int i = 0; i <= myArray.length; i++) {
+            myArray[i] = (i + 3);
         }
     }
+}
 
 ```
 will create an array of 10 integers. 
-Each value will you will be filled with a number 1 higher than it's index.
+Each value will you will be filled with a number 1 higher than its index.
 That is, the first value (index zero), will be 3, the second number (index 1) 
 will be 4 and so on.
 
@@ -109,7 +110,8 @@ A "public" method can be used anywehre in the same source root.
 A return type is what the method calcuates and returns to the user.
 For example, Int X = (Math.Min(a,b,c));
 The Math.Min method will "return" or assign the lowest valuel of a b and c to the 
-variable x.
+variable x. 
+When you specify a return type, make sure the method actually returns that data type
 Some functions return nothing, and in that case, the "return type" is void
 
 A parameter is the data type that a method accepts. 
