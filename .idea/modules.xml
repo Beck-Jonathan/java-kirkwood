@@ -6,9 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/2.JavaCore/2.JavaCore.iml" filepath="$PROJECT_DIR$/2.JavaCore/2.JavaCore.iml" />
       <module fileurl="file://$PROJECT_DIR$/3.JavaMultithreading/3.JavaMultithreading.iml" filepath="$PROJECT_DIR$/3.JavaMultithreading/3.JavaMultithreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/4.JavaCollections/4.JavaCollections.iml" filepath="$PROJECT_DIR$/4.JavaCollections/4.JavaCollections.iml" />
+
       <module fileurl="file://$PROJECT_DIR$/CodeGymTasks.iml" filepath="$PROJECT_DIR$/CodeGymTasks.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CourseDemos/CourseDemos.iml" filepath="$PROJECT_DIR$/CourseDemos/CourseDemos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FinalProject/FinalProject.iml" filepath="$PROJECT_DIR$/FinalProject/FinalProject.iml" />
     </modules>
   </component>
 </project>

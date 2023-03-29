@@ -103,9 +103,10 @@ I'm learning about methods
 A method will have an access modifier, return type, parameters, and arguments.
 
 Access modifiers are "public" "private" or "protected"
-A "protected" method can only be accessed by methods in the same package
-A "private" method can only be used by the same class
-A "public" method can be used anywehre in the same source root.
+
+* A **protected** method can only be accessed by methods in the same package
+* A **private** method can only be used by the same class
+* A **public** method can be used anywhere in the same source root.
 
 A return type is what the method calcuates and returns to the user.
 For example, Int X = (Math.Min(a,b,c));
