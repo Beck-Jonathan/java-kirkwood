@@ -1,3 +1,4 @@
+import data.ZeldaDAO;
 import data.Zelda_Game;
 import utilities.FileRead;
 import utilities.UserInput;
@@ -27,6 +28,7 @@ public class MainMenu {
         // use javafx to make visual gui for other extra credit
         //make sure to close the scanner when you have multiple users
         Scanner banana = new Scanner(System.in);
+        ZeldaDAO.readData();
 
 
         int choice;
