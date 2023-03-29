@@ -7,7 +7,7 @@ public class Zelda_Game {
     private int release_year;
     private boolean IsMultiplayer;
     private String platform;
-    private double secondhand_price;
+    private Double secondhand_price;
     private LocalDate dateCompleted;
 
     public Zelda_Game() {
@@ -15,11 +15,11 @@ public class Zelda_Game {
         release_year = 0;
         IsMultiplayer = false;
         platform = "none";
-        secondhand_price = 0;
+        secondhand_price = null;
         dateCompleted = LocalDate.now();
     }
 
-    public Zelda_Game(String name, int release_year, boolean isMultiplayer, String platform, double secondhand_price, LocalDate dateCompleted) {
+    public Zelda_Game(String name, int release_year, boolean isMultiplayer, String platform, Double secondhand_price, LocalDate dateCompleted) {
         this.name = name;
         this.release_year = release_year;
         this.IsMultiplayer = isMultiplayer;
@@ -43,7 +43,7 @@ public class Zelda_Game {
         return release_year;
     }
 
-    public void setRelease_year(int release_year) {
+    public void setRelease_date(int release_year) {
 
         this.release_year = release_year;
     }
@@ -72,7 +72,7 @@ public class Zelda_Game {
         return secondhand_price;
     }
 
-    public void setSecondhand_price(double secondhand_price) {
+    public void setSecondhand_price(Double secondhand_price) {
 
         this.secondhand_price = secondhand_price;
     }

@@ -27,9 +27,7 @@ public class MainMenu {
         // use javafx to make visual gui for other extra credit
         //make sure to close the scanner when you have multiple users
         Scanner banana = new Scanner(System.in);
-        Zelda_Game game1 = new Zelda_Game("Wind Waker",2004,false,"GameCube",
-                22.50,LocalDate.of(2017,2,15));
-        Zelda_Game game2 = new Zelda_Game();
+
 
         int choice;
         //List<List<String>> games = new ArrayList<List<String>>();
