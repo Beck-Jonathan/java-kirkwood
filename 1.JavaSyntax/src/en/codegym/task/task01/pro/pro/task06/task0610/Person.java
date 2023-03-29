@@ -10,14 +10,17 @@ public class Person {
     }
 
     protected String getFirstName() {
+
         return firstName;
     }
 
     String getLastName() {
+
         return lastName;
     }
 
     public String getFullName() {
+        // return String.foramt(%s %S, firstName, lastName);
         return firstName + " " + lastName;
     }
 }
