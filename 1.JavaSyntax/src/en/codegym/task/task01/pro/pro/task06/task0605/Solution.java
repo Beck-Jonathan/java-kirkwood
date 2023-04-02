@@ -4,7 +4,7 @@ package en.codegym.task.task01.pro.pro.task06.task0605;
 Correct order
 */
 
-import org.apache.commons.lang3.ArrayUtils;
+// import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -24,7 +24,7 @@ public class Solution {
             //array[i] = array[array.length - i - 1];
             //array[array.length - i - 1] = holder;
             // Collections.reverse(Arrays.asList(array));  // from class teachings
-            ArrayUtils.reverse(array);
+            // ArrayUtils.reverse(array);
         }
     }
 
