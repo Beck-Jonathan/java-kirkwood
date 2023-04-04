@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CodeGymTasks" />
+        <module name="final_proj" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CodeGymTasks" target="1.8" />
+      <module name="final_proj" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
