@@ -2,7 +2,7 @@ package data;
 
 import java.time.LocalDate;
 
-public class Zelda_Game {
+public class Zelda_Game implements  Comparable<Zelda_Game>{
     private String name;
     private int release_year;
     private boolean IsMultiplayer;
@@ -85,5 +85,10 @@ public class Zelda_Game {
     public void setDateCompleted(LocalDate dateCompleted) {
 
         this.dateCompleted = dateCompleted;
+    }
+
+    @Override
+    public int compareTo(Zelda_Game o) {
+        return this.name.compareTo(o.name)*(-1);
     }
 }

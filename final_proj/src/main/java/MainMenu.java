@@ -35,7 +35,7 @@ public class MainMenu {
         //List<List<String>> games = new ArrayList<List<String>>();
         //games= FileRead.file();
         System.out.println("Choose your option, 1 through 7");
-        String[] options = {"List All Games", "Sort the games","Find a game",
+        String[] options = {"List All Games", "Sort the games by release year","Find a game",
                 "Add a game","Update a game","Remove a game" };
 
 
@@ -61,6 +61,18 @@ public class MainMenu {
 
                     break;
                 case 2:
+                    ArrayList<Zelda_Game> games = ZeldaDAO.getAllGames();
+
+                    games.sort((g1,g2)->g1.getDateCompleted().compareTo(g2.getDateCompleted()));
+                    for (Zelda_Game game: games)
+                    {System.out.println("title: " + game.getName());
+                        System.out.println("release year: " + game.getRelease_year());
+                        System.out.println("is multiplayer?" + game.isMultiplayer());
+                        System.out.println("platform: " + game.getPlatform());
+                        System.out.println("secondhand price: $" + game.getSecondhand_price());
+                        System.out.println("date completed: " + game.getDateCompleted());
+                        System.out.println("");
+                        System.out.println("");}
 
                     break;
                 case 3:

@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 import static java.lang.Boolean.parseBoolean;
@@ -42,6 +43,7 @@ public class ZeldaDAO {
 
 
                 }
+                Collections.sort(releases);
 
 
 
