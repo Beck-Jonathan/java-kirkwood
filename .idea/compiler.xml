@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CodeGymTasks" target="1.8" />
-      <module name="final_proj" target="1.5" />
+      <module name="final_proj" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

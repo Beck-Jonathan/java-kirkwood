@@ -1,6 +1,5 @@
 import data.ZeldaDAO;
 import data.Zelda_Game;
-import utilities.FileRead;
 import utilities.UserInput;
 import utilities.Helpers;
 
@@ -10,6 +9,7 @@ import java.util.List;
 import java.util.Scanner;
 
 
+import static utilities.Helpers.getChoice;
 import static utilities.UserInput.getInt;
 
 
@@ -35,31 +35,35 @@ public class MainMenu {
         //List<List<String>> games = new ArrayList<List<String>>();
         //games= FileRead.file();
         System.out.println("Choose your option, 1 through 7");
+        String[] options = {"List All Games", "Sort the games","Find a game",
+                "Add a game","Update a game","Remove a game" };
 
 
-        //view all books, create a book, read info about a book, update book, delete book
+
+
+        //view all games, create a game, read info about a game, update game, delete game
         outer: while (true) {
 
-            choice = getInt(banana, "pick menu option");
 
+            choice= getChoice ( banana, options);
             switch(choice) {
                 case 1:
-                    System.out.println("List all books");
+
                     break;
                 case 2:
-                    System.out.println("Sort the books");
+
                     break;
                 case 3:
-                    System.out.println("Find a book");
+
                     break;
                 case 4:
-                    System.out.println("Add a book");
+
                     break;
                 case 5:
-                    System.out.println("Update a book");
+
                     break;
                 case 6:
-                    System.out.println("Remove a book");
+
                     break;
                 default:
                     break outer;
