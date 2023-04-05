@@ -47,7 +47,17 @@ public class MainMenu {
 
             choice= getChoice ( banana, options);
             switch(choice) {
-                case 1:
+                case 1: for (Zelda_Game game: ZeldaDAO.getAllGames()){
+                    System.out.println("title: " + game.getName());
+                    System.out.println("release year: " + game.getRelease_year());
+                    System.out.println("is multiplayer?" + game.isMultiplayer());
+                    System.out.println("platform: " + game.getPlatform());
+                    System.out.println("secondhand price: $" + game.getSecondhand_price());
+                    System.out.println("date completed: " + game.getDateCompleted());
+                    System.out.println("");
+                    System.out.println("");
+                }
+
 
                     break;
                 case 2:
@@ -67,10 +77,10 @@ public class MainMenu {
                     break;
                 default:
                     break outer;
-            }
-
-        }
+            } // end of switch statement
+            Helpers.PressEnterToContinue(banana);
+        } // end of while loop
         System.out.println("Thank you for , wait, errr, boop, goodbye");
         banana.close();
-    }
+    } // end of main method
 }

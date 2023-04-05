@@ -9,11 +9,9 @@ import java.util.Scanner;
 public class UserInput {
     public static String getString(Scanner scanner, String prompt) {
         String value = "";
-        do {
             System.out.print(prompt + ": ");
             value = scanner.nextLine();
-        } while (value.equals(""));
-        return value;
+            return value;
     }
 
     public static boolean getBoolean(Scanner scanner, String prompt) {

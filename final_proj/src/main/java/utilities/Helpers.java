@@ -15,6 +15,7 @@ public class Helpers {
     public static int getChoice (Scanner scanner, String[] options){
         //print all values from array with a number in front
         // prompt for number, use getint method
+        //partner assignment 5 code
         int choice=0;
         for (int i=0;i<options.length;i++) {
             System.out.println((i+1) + ") " + options[i]);
@@ -24,11 +25,16 @@ public class Helpers {
 
         System.out.println("What is your choice? 1 through " +(options.length+1) );
 
-        choice = UserInput.getInt(scanner, "");
+        choice = UserInput.getInt(scanner, "",1,7);
 
 
         return choice;
 
+
+    }
+    public static void PressEnterToContinue(Scanner scanner){
+
+        UserInput.getString(scanner,"Press enter to continue");
 
     }
 }
