@@ -89,6 +89,7 @@ public class Zelda_Game implements  Comparable<Zelda_Game>{
 
     @Override
     public int compareTo(Zelda_Game o) {
-        return this.name.compareTo(o.name)*(-1);
+
+        return this.name.compareTo(o.name);
     }
 }
