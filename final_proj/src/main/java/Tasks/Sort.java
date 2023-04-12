@@ -74,6 +74,14 @@ public class Sort { public static void handleTask(Scanner banana){
             default:
                 break outer;
         } // end of switch statement
+        for (Zelda_Game game:games){System.out.println("title: " + game.getName());
+        System.out.println("release year: " + game.getRelease_year());
+        System.out.println("is multiplayer? " + game.isMultiplayer());
+        System.out.println("platform: " + game.getPlatform());
+        System.out.println("secondhand price: $" + game.getSecondhand_price());
+        System.out.println("date completed: " + game.getDateCompleted());
+        System.out.println("");
+        System.out.println("");}
         Helpers.PressEnterToContinue(banana);
     } // end of while loop
 }
