@@ -20,12 +20,12 @@ public class Helpers {
         for (int i=0;i<options.length;i++) {
             System.out.println((i+1) + ") " + options[i]);
         }
-        System.out.println("7) Exit");
+        System.out.println((options.length+1)+" )Exit");
 
 
         System.out.println("What is your choice? 1 through " +(options.length+1) );
 
-        choice = UserInput.getInt(scanner, "",1,7);
+        choice = UserInput.getInt(scanner, "",1,options.length+1);
 
 
         return choice;

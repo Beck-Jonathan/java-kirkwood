@@ -1,3 +1,4 @@
+import Tasks.Sort;
 import data.ZeldaDAO;
 import data.Zelda_Game;
 import utilities.UserInput;
@@ -7,6 +8,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 
 
 import static utilities.Helpers.getChoice;
@@ -31,11 +33,11 @@ public class MainMenu {
         ZeldaDAO.readData();
 
 
-        int choice;
+        int choice=0;
         //List<List<String>> games = new ArrayList<List<String>>();
         //games= FileRead.file();
         System.out.println("Choose your option, 1 through 7");
-        String[] options = {"List All Games", "Sort the games by completion dat","Find a game",
+        String[] options = {"List All Games", "Sort the games","Find a game",
                 "Add a game","Update a game","Remove a game" };
 
 
@@ -43,6 +45,7 @@ public class MainMenu {
 
         //view all games, create a game, read info about a game, update game, delete game
         outer: while (true) {
+            System.out.println("** Main Menu **");
 
 
             choice= getChoice ( banana, options);
@@ -50,7 +53,7 @@ public class MainMenu {
                 case 1: for (Zelda_Game game: ZeldaDAO.getAllGames()){
                     System.out.println("title: " + game.getName());
                     System.out.println("release year: " + game.getRelease_year());
-                    System.out.println("is multiplayer?" + game.isMultiplayer());
+                    System.out.println("is multiplayer? " + game.isMultiplayer());
                     System.out.println("platform: " + game.getPlatform());
                     System.out.println("secondhand price: $" + game.getSecondhand_price());
                     System.out.println("date completed: " + game.getDateCompleted());
@@ -61,18 +64,7 @@ public class MainMenu {
 
                     break;
                 case 2:
-                    ArrayList<Zelda_Game> games = ZeldaDAO.getAllGames();
-
-                    games.sort((g1,g2)->g1.getDateCompleted().compareTo(g2.getDateCompleted()));
-                    for (Zelda_Game game: games)
-                    {System.out.println("title: " + game.getName());
-                        System.out.println("release year: " + game.getRelease_year());
-                        System.out.println("is multiplayer?" + game.isMultiplayer());
-                        System.out.println("platform: " + game.getPlatform());
-                        System.out.println("secondhand price: $" + game.getSecondhand_price());
-                        System.out.println("date completed: " + game.getDateCompleted());
-                        System.out.println("");
-                        System.out.println("");}
+                    Sort.handleTask(banana);
 
                     break;
                 case 3:
