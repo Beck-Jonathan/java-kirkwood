@@ -13,7 +13,7 @@ public class Solution {
     public static void printNumbers() throws InterruptedException {
         for (int i=1; i<=9;i++){
             System.out.println(i);
-            Thread.sleep(1,300_000);
+            Thread.sleep(1000,300_000);
         }
         System.out.println(10);
     }
