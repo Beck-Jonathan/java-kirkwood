@@ -15,7 +15,7 @@ public class Zelda_Game implements  Comparable<Zelda_Game>{
         release_year = 0;
         IsMultiplayer = false;
         platform = "none";
-        secondhand_price = null;
+        secondhand_price = 0d;
         dateCompleted = LocalDate.now();
     }
 

@@ -11,7 +11,8 @@ import static data.ZeldaDAO.readData;
 import static java.lang.Double.valueOf;
 import static utilities.Helpers.getChoice;
 
-public class Sort { public static void handleTask(Scanner banana){
+public class Sort implements TaskHandler {
+    public void handleTask(Scanner banana){
     ArrayList<Zelda_Game> games = ZeldaDAO.getAllGames();
     int choice=0;
     //List<List<String>> games = new ArrayList<List<String>>();
