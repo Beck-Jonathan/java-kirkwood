@@ -18,9 +18,9 @@ public class Sort implements TaskHandler {
     //List<List<String>> games = new ArrayList<List<String>>();
     //games= FileRead.file();
 
-    String[] options = {"title A to Z", "title Z to A","Completion date, recent to oldest",
-            "Completion date, oldest to recent","Second hand price, low to high","second hand price high to low",
-    "release year recent to oldest","release year oldest to recent"};
+    String[] options = {"title A to Z", "title Z to A","Completion date, oldest to recent",
+            "Completion date, recent to oldest","Second hand price, low to high","second hand price high to low",
+    "release year oldest to recent","release year recent to oldest"};
     System.out.println("Choose your option, 1 through "+(options.length+1) + ":");
 
 
