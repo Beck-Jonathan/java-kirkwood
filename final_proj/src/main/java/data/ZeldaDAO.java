@@ -15,7 +15,8 @@ import static java.lang.Integer.parseInt;
 
 public class ZeldaDAO {
     private static ArrayList<Zelda_Game> releases;
-    private static final String FILEPATH = "final_proj\\src\\main\\resources\\zelda_releases.csv";
+    private static final String FILEPATH = "final_proj\\src\\main\\resources\\";
+    private static final String FILENAME ="zelda_releases";
     private static String header;
 
 
@@ -23,7 +24,7 @@ public class ZeldaDAO {
         if (releases == null) {
 
             try {
-                Scanner GameGetter = new Scanner(new File(FILEPATH));
+                Scanner GameGetter = new Scanner(new File(FILEPATH+FILENAME+".csv"));
                 System.out.println("file found!");
                 releases = new ArrayList<>();
                 header=GameGetter.nextLine(); // read in first line and don't do anything with it
@@ -58,18 +59,16 @@ public class ZeldaDAO {
         }
     }
     private static void writeData() {
-        try (PrintWriter writer = new PrintWriter(new File(FILEPATH+LocalDate.now()))) {
+        try (PrintWriter writer = new PrintWriter(new File(FILEPATH+FILENAME+"test.csv"))) {
             writer.print(header+"\n");
             for  ( Zelda_Game game: releases){
-                writer.print(game.getName()+"\t");
-                writer.print(game.getRelease_year()+"\t");
-                writer.print(game.isMultiplayer()+"\t");
-                writer.print(game.getPlatform()+"\t");
-                writer.print(game.getSecondhand_price()+"\t");
-                writer.print(game.getDateCompleted()+"\n");
-
-
-
+                writer.printf("%s\t%s\t%s\t%s\t%s\t%s\n",
+                game.getName(),
+                game.getRelease_year(),
+                game.isMultiplayer(),
+                game.getPlatform(),
+                game.getSecondhand_price(),
+                game.getDateCompleted());
             }
 
         } catch (FileNotFoundException e) {

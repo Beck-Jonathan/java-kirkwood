@@ -35,8 +35,7 @@ public class MainMenu {
 
 
         int choice=0;
-        //List<List<String>> games = new ArrayList<List<String>>();
-        //games= FileRead.file();
+
         System.out.println("Choose your option, 1 through 7");
         String[] options = {"List All Games", "Sort the games","Find a game",
                 "Add a game","Update a game","Remove a game" };
