@@ -15,8 +15,7 @@ import static java.lang.Integer.parseInt;
 
 public class ZeldaDAO {
     private static ArrayList<Zelda_Game> releases;
-    private static final String FILEPATH = "C:\\Users\\jjbec\\Downloads\\" +
-            "CodeGymTasks\\final_proj\\src\\main\\java\\resources\\zelda_releases.csv";
+    private static final String FILEPATH = "final_proj\\src\\main\\resources\\zelda_releases.csv";
     private static String header;
 
 
