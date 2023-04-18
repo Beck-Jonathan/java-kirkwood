@@ -86,4 +86,35 @@ public class UserInput {
         }
         return date;
     }
+    public static Double getDouble(Scanner scanner, String prompt){
+        return getDouble(scanner, prompt, Double.MIN_VALUE);
+    }
+    public static Double getDouble(Scanner scanner, String prompt,Double min){
+        return getDouble(scanner, prompt, Double.MIN_VALUE, Double.MAX_VALUE);
+    }
+
+    public static Double getDouble(Scanner scanner, String prompt, Double min, Double max) {
+        Double value = 0.0;
+        while (true) {
+            try {
+                System.out.print(prompt + ": ");
+                value = scanner.nextDouble();
+                scanner.nextLine();
+                if (value < min) {
+                    System.out.println("Number cannot be less than " + min + "\n");
+                    continue;
+                }
+                if (value > max) {
+                    System.out.println("Number cannot be larger than " + max + "\n");
+                    continue;
+                }
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid number\n");
+                scanner.nextLine();
+                continue;
+            }
+        }
+        return value;
+    }
 }

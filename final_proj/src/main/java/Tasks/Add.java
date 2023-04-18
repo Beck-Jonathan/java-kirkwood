@@ -31,6 +31,9 @@ public class Add implements TaskHandler {
 
         int release_year = UserInput.getInt(banana,"What is the release year?",1980,2025);
         game.setRelease_date(release_year);
+
+        Double secondhand_price = UserInput.getDouble(banana, "What is the secondhand price",0d);
+        game.setSecondhand_price(secondhand_price);
         ZeldaDAO.addGame(game);
     }
 }

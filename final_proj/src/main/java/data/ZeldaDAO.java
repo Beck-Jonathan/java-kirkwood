@@ -16,32 +16,33 @@ import static java.lang.Integer.parseInt;
 public class ZeldaDAO {
     private static ArrayList<Zelda_Game> releases;
     private static final String FILEPATH = "final_proj\\src\\main\\resources\\";
-    private static final String FILENAME ="zelda_releases";
+    private static final String FILENAME = "zelda_releases";
     private static String header;
+
+    private static final DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("M/d/yyyy");
 
 
     public static void readData() {
         if (releases == null) {
 
             try {
-                Scanner GameGetter = new Scanner(new File(FILEPATH+FILENAME+".csv"));
+                Scanner GameGetter = new Scanner(new File(FILEPATH + FILENAME + ".csv"));
                 System.out.println("file found!");
                 releases = new ArrayList<>();
-                header=GameGetter.nextLine(); // read in first line and don't do anything with it
+                header = GameGetter.nextLine(); // read in first line and don't do anything with it
                 while (GameGetter.hasNextLine()) {
                     String line = GameGetter.nextLine();
                     String[] data = line.split(",");
 
                     Zelda_Game game = new Zelda_Game();
-                    DateTimeFormatter format = DateTimeFormatter.ofPattern("M/d/yyyy");
 
 
                     game.setName(data[0].toString());
                     game.setMultiplayer(parseBoolean(data[2].toString()));
                     game.setRelease_date(parseInt((data[1].toString())));
                     game.setPlatform(data[3]);
-                    game.setDateCompleted(LocalDate.parse(data[5],format));
-                    game.setSecondhand_price(parseDouble((data[4].toString().replace('$',' '))));
+                    game.setDateCompleted(LocalDate.parse(data[5], dateFormat));
+                    game.setSecondhand_price(parseDouble((data[4].toString().replace('$', ' '))));
                     releases.add(game);
                     //System.out.println(game.getName());
 
@@ -50,25 +51,24 @@ public class ZeldaDAO {
                 Collections.sort(releases);
 
 
-
-
             } catch (FileNotFoundException e) {
                 System.out.println(e.getMessage());
                 throw new RuntimeException();
             }
         }
     }
+
     private static void writeData() {
-        try (PrintWriter writer = new PrintWriter(new File(FILEPATH+FILENAME+"test.csv"))) {
-            writer.print(header+"\n");
-            for  ( Zelda_Game game: releases){
-                writer.printf("%s\t%s\t%s\t%s\t%s\t%s\n",
-                game.getName(),
-                game.getRelease_year(),
-                game.isMultiplayer(),
-                game.getPlatform(),
-                game.getSecondhand_price(),
-                game.getDateCompleted());
+        try (PrintWriter writer = new PrintWriter(new File(FILEPATH + FILENAME + ".csv"))) {
+            writer.print(header + "\n");
+            for (Zelda_Game game : releases) {
+                writer.printf("%s,%s,%s,%s,%s,%s\n",
+                        game.getName(),
+                        game.getRelease_year(),
+                        Boolean.toString(game.isMultiplayer()).toUpperCase(),
+                        game.getPlatform(),
+                        ("$" + game.getSecondhand_price()),
+                        game.getDateCompleted().format(dateFormat));
             }
 
         } catch (FileNotFoundException e) {
@@ -76,7 +76,7 @@ public class ZeldaDAO {
         }
     }
 
-    public static ArrayList<Zelda_Game> getAllGames(){
+    public static ArrayList<Zelda_Game> getAllGames() {
 
         return releases;
     }
@@ -86,20 +86,21 @@ public class ZeldaDAO {
         return releases;
     }
 
-    public static void  addGame(Zelda_Game game){
+    public static void addGame(Zelda_Game game) {
         releases.add(game);
         writeData();
 
 
     }
-    public static void updateGame (Zelda_Game game){
+
+    public static void updateGame(Zelda_Game game) {
         releases.remove(game);
         releases.add(game);
         writeData();
 
     }
 
-    public static void deleteGame (Zelda_Game game){
+    public static void deleteGame(Zelda_Game game) {
         releases.remove(game);
         writeData();
 
