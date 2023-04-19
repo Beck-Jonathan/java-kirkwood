@@ -1,5 +1,7 @@
 package utilities;
 
+import data.Zelda_Game;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
@@ -35,6 +37,24 @@ public class Helpers {
     public static void PressEnterToContinue(Scanner scanner){
 
         UserInput.getString(scanner,"Press enter to continue");
+
+    }
+    public static void PrintTableHeaderRow(){
+        System.out.printf("%55s\t%8s\t%7s\t%15s\t%8s\t%15s",
+        "Name", "Year", "Multi", "System", "Price", "Completed");
+        System.out.println("");
+    }
+    public static void PrintObjectAsTableRow(Zelda_Game game){
+        System.out.printf("%55s\t%8s\t%7s\t%15s\t$%8s\t%15s",
+                game.getName(),
+                game.getRelease_year(),
+                game.isMultiplayer(),
+                game.getPlatform(),
+                game.getSecondhand_price(),
+                game.getDateCompleted());
+        System.out.println("");
+
+
 
     }
 }

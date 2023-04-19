@@ -50,15 +50,10 @@ public class MainMenu {
 
             choice= getChoice ( banana, options);
             switch(choice) {
-                case 1: for (Zelda_Game game: ZeldaDAO.getAllGames()){
-                    System.out.println("title: " + game.getName());
-                    System.out.println("release year: " + game.getRelease_year());
-                    System.out.println("is multiplayer? " + game.isMultiplayer());
-                    System.out.println("platform: " + game.getPlatform());
-                    System.out.println("secondhand price: $" + game.getSecondhand_price());
-                    System.out.println("date completed: " + game.getDateCompleted());
-                    System.out.println("");
-                    System.out.println("");
+                case 1:
+                    Helpers.PrintTableHeaderRow();
+                    for (Zelda_Game game: ZeldaDAO.getAllGames()){
+                    Helpers.PrintObjectAsTableRow(game);
                 }
 
 
