@@ -85,6 +85,33 @@ public class Assignment6 {
         Fraction fraction23 = new Fraction(13,-5);
         System.out.println(fraction22.Add(fraction23));
 
+        System.out.println("Enter the first numerator");
+        int n1=scanner.nextInt();
+
+        System.out.println("Enter the first denominator");
+        int d1 = scanner.nextInt();
+
+        System.out.println("Enter the second  numerator");
+        int n2 = scanner.nextInt();
+
+        System.out.println("Enter the second denominator");
+        int d2 = scanner.nextInt();
+        Fraction fraction24=new Fraction();
+        Fraction fraction25 = new Fraction();
+        try {
+             fraction24 = new Fraction(n1, d1);
+        } catch (IllegalArgumentException e){
+            System.out.println(e.getMessage());
+        }
+        try {
+             fraction25 = new Fraction(n2, d2);
+        } catch (IllegalArgumentException e){
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println(fraction24.Add(fraction25));
+
+
 
 
 
