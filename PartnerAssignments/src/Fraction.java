@@ -90,6 +90,48 @@ public class Fraction {
         String result = fraction1 + " + " + fraction2 + " = " + addedFraction;
         return result;
     }
+    public String Subtract(Fraction other){
+        int a = this.numerator;
+        int b = this.denominator;
+        int c = other.getNumerator();
+        int d = other.getDenominator();
+        int addedNumerator = a*d - c*b;
+        int addedDenominator = b * d;
+        Fraction f = new Fraction(addedNumerator, addedDenominator);
+        String fraction1 = this.mixedNumber();
+        String fraction2 = other.mixedNumber();
+        String subFraction = f.mixedNumber();
+        String result = fraction1 + " - " + fraction2 + " = " + subFraction;
+        return result;
+    }
+    public String Multiply(Fraction other){
+        int a = this.numerator;
+        int b = this.denominator;
+        int c = other.getNumerator();
+        int d = other.getDenominator();
+        int multNumerator = a*c;
+        int multDenominator = b * d;
+        Fraction f = new Fraction(multNumerator, multDenominator);
+        String fraction1 = this.mixedNumber();
+        String fraction2 = other.mixedNumber();
+        String multFraction = f.mixedNumber();
+        String result = fraction1 + " * " + fraction2 + " = " + multFraction;
+        return result;
+    }
+    public String Divide(Fraction other){
+        int a = this.numerator;
+        int b = this.denominator;
+        int c = other.getNumerator();
+        int d = other.getDenominator();
+        int multNumerator = a*d;
+        int multDenominator = b * c;
+        Fraction f = new Fraction(multNumerator, multDenominator);
+        String fraction1 = this.mixedNumber();
+        String fraction2 = other.mixedNumber();
+        String divFraction = f.mixedNumber();
+        String result = fraction1 + " / " + fraction2 + " = " + divFraction;
+        return result;
+    }
 
     public String toString() {
         return this.numerator + "/" + this.denominator;
