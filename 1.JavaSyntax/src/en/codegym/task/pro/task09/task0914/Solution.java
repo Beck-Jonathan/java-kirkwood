@@ -2,8 +2,7 @@ package en.codegym.task.pro.task09.task0914;
 
 /* 
 Path update
-this won't validate but it works so I'm moving on.
-- Jonathan 4/14/2023
+Works but won't validate. Moving on
 */
 
 public class Solution {
