@@ -1,4 +1,5 @@
 import Tasks.Add;
+import Tasks.Find;
 import Tasks.Sort;
 import data.ZeldaDAO;
 import data.Zelda_Game;
@@ -63,6 +64,7 @@ public class MainMenu {
 
                     break;
                 case 3:
+                    new Find().handleTask(banana);
 
                     break;
                 case 4:

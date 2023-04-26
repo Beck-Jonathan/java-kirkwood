@@ -2,7 +2,7 @@ package data;
 
 import java.time.LocalDate;
 
-public class Zelda_Game implements  Comparable<Zelda_Game>{
+public class Zelda_Game implements  Comparable<Zelda_Game>, Cloneable{
     private String name;
     private int release_year;
     private boolean IsMultiplayer;
@@ -91,5 +91,10 @@ public class Zelda_Game implements  Comparable<Zelda_Game>{
     public int compareTo(Zelda_Game o) {
 
         return this.name.compareTo(o.name);
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
