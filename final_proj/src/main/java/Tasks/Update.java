@@ -58,7 +58,7 @@ public class Update implements TaskHandler {
             copy.get(0).setSecondhand_price(secondhandPrice);
 
             Boolean isMultiplayer = UserInput.getBoolean(banana, "Is this game multiplayer?" +
-                    "currently this is stored as " + copy.get(0).getSecondhand_price());
+                    "currently this is stored as " + copy.get(0).isMultiplayer());
             copy.get(0).setMultiplayer(isMultiplayer);
 
             int release_year = UserInput.getInt(banana, "What is the release year" +
