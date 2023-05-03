@@ -18,7 +18,7 @@ public class Remove implements TaskHandler {
         ArrayList<Zelda_Game> copy = Helpers.cloneList(games);
         while(!copy.isEmpty()&&copy.size()!=1) {
              copy = Helpers.cloneList(games);
-            System.out.println("** find menu **");
+            System.out.println("** delete menu **");
 
             String search = UserInput.getString(banana, "Enter the game's title, or 00 to exit");
             if (search.equals("00")){break;}

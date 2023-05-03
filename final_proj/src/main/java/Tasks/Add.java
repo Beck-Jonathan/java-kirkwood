@@ -8,6 +8,7 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 
+import static utilities.UserInput.getDouble;
 import static utilities.UserInput.getString;
 
 public class Add implements TaskHandler {
@@ -23,8 +24,7 @@ public class Add implements TaskHandler {
         String platform = getString(banana,"What system is this for?");
         game.setPlatform(platform);
 
-        //Double secondhandPrice = getDouble
-        //game.setSecondhand_price();
+
 
         Boolean isMultiplayer = UserInput.getBoolean(banana,"Is this game multiplayer?");
         game.setMultiplayer(isMultiplayer);
@@ -32,7 +32,7 @@ public class Add implements TaskHandler {
         int release_year = UserInput.getInt(banana,"What is the release year?",1980,2025);
         game.setRelease_date(release_year);
 
-        Double secondhand_price = UserInput.getDouble(banana, "What is the secondhand price",0d);
+        Double secondhand_price = getDouble(banana, "What is the secondhand price",0d);
         game.setSecondhand_price(secondhand_price);
         ZeldaDAO.addGame(game);
     }
