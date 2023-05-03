@@ -1,6 +1,4 @@
-import Tasks.Add;
-import Tasks.Find;
-import Tasks.Sort;
+import Tasks.*;
 import data.ZeldaDAO;
 import data.Zelda_Game;
 import utilities.UserInput;
@@ -72,9 +70,11 @@ public class MainMenu {
 
                     break;
                 case 5:
+                    new Update().handleTask(banana);
 
                     break;
                 case 6:
+                    new Remove().handleTask(banana);
 
                     break;
                 default:
