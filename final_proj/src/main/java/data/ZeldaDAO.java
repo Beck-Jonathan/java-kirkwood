@@ -100,8 +100,8 @@ public class ZeldaDAO {
 
     }
 
-    public static void deleteGame(Zelda_Game game) {
-        releases.remove(game);
+    public static void deleteGame(ArrayList<Zelda_Game> updated) {
+        releases=updated;
         writeData();
 
 
