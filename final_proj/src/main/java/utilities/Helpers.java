@@ -2,15 +2,25 @@ package utilities;
 
 import data.Zelda_Game;
 
+import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Helpers {
+    public static int name_length=55;
+    public static int year_length = 8;
+    public static int multi_length = 8;
+    public static int system_length=10;
+    public static int price_length = 6;
+    public static int completed_length=15;
+
+
+
     public static String printDate(LocalDate date) {
         String date_string = "h";
-        DateTimeFormatter format = DateTimeFormatter.ofPattern("EEEE, MMMM d, yyyy");
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("MMMM d, yyyy");
         date_string = date.format(format);
 
         return date_string;
@@ -44,20 +54,30 @@ public class Helpers {
     }
 
     public static void PrintTableHeaderRow() {
-        System.out.printf("%55s\t%8s\t%7s\t%15s\t%8s\t%15s",
+        System.out.printf("%"+name_length+"s\t%"+year_length+"s\t%"+multi_length+"s\t%"+system_length+
+                        "s\t%"+price_length+"s\t%"+completed_length+"s",
                 "Name", "Year", "Multi", "System", "Price", "Completed");
         System.out.println("");
     }
 
     public static void PrintObjectAsTableRow(Zelda_Game game) {
-        System.out.printf("%55s\t%8s\t%7s\t%15s\t$%8s\t%15s",
+        System.out.printf("%"+name_length+"s\t%"+year_length+"s\t%"+multi_length+"s\t%"+system_length+
+                        "s\t%-"+price_length+"s\t%"+completed_length+"s",
                 game.getName(),
                 game.getRelease_year(),
-                game.isMultiplayer(),
+                game.isMultiplayer() ? "yes" : "no",
                 game.getPlatform(),
-                game.getSecondhand_price(),
-                game.getDateCompleted());
+                printCurrency(game.getSecondhand_price()),
+                printDate(game.getDateCompleted()));
         System.out.println("");
+    }
+
+    public static String printCurrency(Double price){
+        // from stack overflow
+        String result="";
+        NumberFormat formatter = NumberFormat.getCurrencyInstance();
+
+        return formatter.format(price);
     }
 
 

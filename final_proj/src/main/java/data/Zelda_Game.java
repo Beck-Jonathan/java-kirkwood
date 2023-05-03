@@ -97,4 +97,16 @@ public class Zelda_Game implements  Comparable<Zelda_Game>, Cloneable{
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
+
+    @Override
+    public String toString() {
+        return "Zelda_Game{" +
+                "name='" + name + '\'' +
+                ", release_year=" + release_year +
+                ", IsMultiplayer=" + IsMultiplayer +
+                ", platform='" + platform + '\'' +
+                ", secondhand_price=" + secondhand_price +
+                ", dateCompleted=" + dateCompleted +
+                '}';
+    }
 }
