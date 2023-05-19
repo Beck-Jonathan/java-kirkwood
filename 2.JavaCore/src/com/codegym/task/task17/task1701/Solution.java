@@ -33,4 +33,24 @@ public class Solution {
             }
         }
     }
+
+    public static class NoteThread extends Thread{
+         public void run()  {
+             for (int i =0;i<1000;i++){
+                 Note.addNote(getName()+"-Note"+i);
+                 try {
+                     Thread.sleep(1);
+                 } catch (InterruptedException e) {
+                     throw new RuntimeException(e);
+                 }
+             }
+             for (int i =0;i<1000;i++){
+                 Note.removeNote(this.getName());
+
+             }
+
+        }
+
+    }
 }
+
